@@ -70,4 +70,18 @@ console.log(subtraction(15));
 
 
 
-// 3. 
+// 3. personDataLog arrow function
+
+//function declaration
+function personDataLog(obj) {
+  console.log(`My name is ` + obj.firstname + ` ` + obj.lastname + `. I'm ` + obj.age + ` years old.`);
+}
+
+
+const personData = {firstname: 'Roland', lastname: 'Hetesi', age: 46};
+personDataLog(personData);
+
+const personData2 = {firstname: 'Jane'};
+personDataLog(personData2);
+
+personDataLog({});
