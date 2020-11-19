@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript függvény gyakorlatok</title>
+</head>
+
+<body>
+    <h1>Javascript haladó - függvények - gyakorlatok</h1>
+
+    <main>
+        <section>
+            <article>
+            1. Feladat
+            Hozz létre egy html fájlt benne 3 gombbal! A gombok szövegei az alábbiak legyenek: Első, Második, Harmadik.
+            Mindegyik gombnak add meg a button class-t!
+            Készíts egy JavaScript fájlt, és linkeld be a html oldaladba! Írj egy függvény kifejezést arrow function
+            segítségével. A függvény neve handleClick legyen A függvény a meghívása után mindegyik gombhoz hozzáad egy
+            eseményfigyelőt, amely kattintásra kiírja a gomb szövegét a konzolra. A függvényen belül ciklust használj,
+            tehát ne manuálisan egyesével add a gombokhoz az eseményfigyelőt!
+        </article>
+        <hr>
+        <article>
+            2. Feladat
+            Hozz létre két függvény kifejezést arrow functionnel! A függvények neve summation és subtraction. Mindegyik
+            függvény két paramétert kap, ezek neve a és b. Amennyiben bármelyik paraméter hiányozna a függvény
+            meghívásakor, úgy az alapértelemezett érték a 0 legyen.
+            A summation visszatér a két szám összegével, a subtraction visszatér a két szám különbségével.
+        </article>
+        <hr>
+        <article>
+            3. Feladat
+            Hozz létre egy függvény kifejezést arrow functionnel! A függvény neve personDataLog legyen. A függvény
+            paraméterként egy objektumot vár, ami egy firstname, lastname, és age tulajdonságokkal rendelkezik.
+            Amennyiben bármelyik tulajdonság hiányozna úgy rendre a következő alapértelemezett értékeket vegyék fel: -
+            firstname: John - lastname: Doe - age: 33
+
+            A függvény kiírja az adott illető adatai a konzolra az adott formátumban:
+            My name is firstname, lastname. I'm age years old.
+            A firstname, lastname és age helyére a paraméterként kapott objektum tulajdonságok értékét kell
+            behelyettesíteni.
+        </article>
+        <hr>
+        </section>
+        <section>
+            <button class="button" value="Első">Első</button>
+            <button class="button" value="Második">Második</button>
+            <button class="button" value="Harmadik">Harmadik</button>
+        </section>
+
+
+        <script src="./js/main.js"></script>
+    </main>
+</body>
+
+</html>
