@@ -42,9 +42,33 @@ const handleClick = () => {
 }
 */
 
-
+/*
 // Arrow function a függvényen belül
 const handleClick = function () {
+    let buttons = document.querySelectorAll('.button');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', () => {
+            //console.log(buttons[i].value);
+            console.log(buttons[i].innerHTML);
+        })
+    }
+}
+*/
+
+/*
+const handleClick = () => {
+    let buttons = document.querySelectorAll('.button');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+            //console.log(buttons[i].value);
+            console.log(buttons[i].innerHTML);
+        })
+    }
+}
+*/
+
+
+const handleClick = () => {
     let buttons = document.querySelectorAll('.button');
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', () => {
