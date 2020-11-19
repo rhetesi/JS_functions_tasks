@@ -44,17 +44,17 @@ const handleClick = () => {
 
 
 // Arrow function a függvényen belül
-const handleClick = function() {
+const handleClick = function () {
     let buttons = document.querySelectorAll('.button');
     for (let i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', () => {
-        //console.log(buttons[i].value);
-        console.log(buttons[i].innerHTML);
-      })
+        buttons[i].addEventListener('click', () => {
+            //console.log(buttons[i].value);
+            console.log(buttons[i].innerHTML);
+        })
     }
-  }
-  
-  handleClick();
+}
+
+handleClick();
 
 
 
@@ -71,17 +71,25 @@ console.log(subtraction(15));
 
 
 // 3. personDataLog arrow function
-
+/*
 //function declaration
 function personDataLog(obj) {
-  console.log(`My name is ` + obj.firstname + ` ` + obj.lastname + `. I'm ` + obj.age + ` years old.`);
+    console.log(`My name is ` + obj.firstname + ` ` + obj.lastname + `. I'm ` + obj.age + ` years old.`);
+}
+*/
+
+// function expression
+const personDataLog = function ({ firstname = 'John', lastname = 'Doe', age = 33 } = {}) {
+    console.log(`My name is ` + firstname + ` ` + lastname + `. I'm ` + age + ` years old.`);
 }
 
 
-const personData = {firstname: 'Roland', lastname: 'Hetesi', age: 46};
+
+
+const personData = { firstname: 'Roland', lastname: 'Hetesi', age: 46 };
 personDataLog(personData);
 
-const personData2 = {firstname: 'Jane'};
+const personData2 = { firstname: 'Jane' };
 personDataLog(personData2);
 
 personDataLog({});
