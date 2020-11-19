@@ -86,9 +86,15 @@ const personDataLog = function ({ firstname = 'John', lastname = 'Doe', age = 33
 */
 
 // arrow function
+/*
 const personDataLog = ({firstname: 'John', lastname: 'Doe', age: '33'} = {}) => {
     console.log(`My name is ` + obj.firstname + obj.lastname + `. I'm ` + obj.age + ` years old.`);
+}
+*/
 
+const personDataLog = ({firstname = 'John', lastname = 'Doe', age = 33} = {}) => {
+    console.log(`My name is ` + firstname + ` ` + lastname + `. I'm ` + age + ` years old.`);
+  }
 
 const personData = { firstname: 'Roland', lastname: 'Hetesi', age: 46 };
 personDataLog(personData);
